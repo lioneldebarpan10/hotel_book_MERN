@@ -4,7 +4,7 @@ import Navbar from './components/Navbar.jsx';
 import { useLocation  , Routes , Route} from 'react-router-dom';
 import Home from './pages/Home.jsx';
 import AllRooms from './pages/AllRooms.jsx'
-
+import RoomDetails from './pages/RoomDetails.jsx';
 import Footer from './components/Footer'
 
 const App = () => {
@@ -17,6 +17,7 @@ const App = () => {
         <Routes>
           <Route path = '/' element = {<Home />}/>
           <Route path = '/rooms' element = {<AllRooms />}/>
+          <Route path = '/rooms/:id' element = {<RoomDetails />} />
         </Routes>
       </div>
       <Footer />
