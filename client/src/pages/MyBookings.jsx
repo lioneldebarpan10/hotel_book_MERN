@@ -31,7 +31,7 @@ const MyBookings = () => {
 
             {bookings.map((booking) => (
                <div key={booking._id} className='grid grid-cols-1 md:grid-cols-[3fr_2fr_1fr] w_full border-b border-gray-300 py-6 first:border-t'>
-                   {/**Hotel details */}
+                   {/**Hotel details => hotel name , room type , address , location , total p rice */}
                   <div className='flex flex-col md:flex-row'>
                      <img src={booking.room.images[0]} alt="hotel-img" className='min-md:w-44 rounded shadow object-cover' />
                      <div className='flex flex-col gap-1.5 max-md:mt-3 min-md:ml-4'>
@@ -50,7 +50,7 @@ const MyBookings = () => {
                         <p className='text-base'>Total : ${booking.totalPrice}</p>
                      </div>
                   </div>
-                  {/* checkin & checkout times */}
+                  {/* checkin & checkout times => check in and check out dates */}
                   <div className='flex flex-row md:items-center md:gap-12 mt-3 gap-8'>
                      <div>
                         <p>Check-In:</p>
