@@ -8,7 +8,7 @@ const Sidebar = () => {
 
       {name: "Add Room" , path: "/add-room" , icon: assets.addIcon},
 
-      {name: "List Room", path: "/list-room" , icon: assets.dashboardIcon}
+      {name: "List Room", path: "/list-room" , icon: assets.listIcon}
    ]
    return (
       <div className='md:w-64 w-16 border-r h-full text-base border-gray-300 pt-4 flex flex-col transition-all duration-300'>
