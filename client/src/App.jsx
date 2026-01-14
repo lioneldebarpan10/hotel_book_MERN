@@ -15,14 +15,17 @@ const App = () => {
   return(
     <div>
       {!isOwnerPath && <Navbar />} {/*When the user is on the owner dashboard, hide the navbar */}
-      {false && <HotelReg />}
+      {false && <HotelReg /> }
       <div className = "min-h-[70vh]">
         <Routes>
           <Route path = '/' element = {<Home />}/>
           <Route path = '/rooms' element = {<AllRooms />}/>
           <Route path = '/rooms/:id' element = {<RoomDetails />} />
           <Route path = '/my-bookings' element= {<MyBookings />} />
+
         </Routes>
+
+
       </div>
       <Footer />
 
