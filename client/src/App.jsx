@@ -7,6 +7,7 @@ import AllRooms from './pages/AllRooms.jsx'
 import RoomDetails from './pages/RoomDetails.jsx';
 import MyBookings from './pages/MyBookings.jsx';
 import Footer from './components/Footer'
+import HotelReg from './components/HotelReg'
 
 const App = () => {
 
@@ -14,6 +15,7 @@ const App = () => {
   return(
     <div>
       {!isOwnerPath && <Navbar />} {/*When the user is on the owner dashboard, hide the navbar */}
+      {false && <HotelReg />}
       <div className = "min-h-[70vh]">
         <Routes>
           <Route path = '/' element = {<Home />}/>
